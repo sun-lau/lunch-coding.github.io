@@ -39,8 +39,8 @@
             }
             .box{
                 background-color: teal;
-                width: 33.33%;
-                height: 33.33%;
+                width: 50%;
+                height: 50%;
                 float: left;
             }
             #backstage{
@@ -101,11 +101,6 @@
                 <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
             </div>
             <div id="backstage">
                 <div class="mickey fade-in"></div>
@@ -139,7 +134,7 @@
             });
 
             function popMickey(){
-                var which_box = Math.floor(Math.random() * 9);     // returns a random integer from 0 to 8
+                var which_box = Math.floor(Math.random() * 4);     // returns a random integer from 0 to 3
                 var $mickey = $('#backstage').find('.mickey').clone();
                 $('.box').eq(which_box).append($mickey);
                 setTimeout(function(){
