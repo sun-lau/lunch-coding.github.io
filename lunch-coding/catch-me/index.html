@@ -132,6 +132,7 @@
                 $('#playground').on('click', '.mickey', function(){
                     console.log('clicked mickey!');
                     score = score + 1;
+                    window.navigator.vibrate(200);
                     $(this).fadeOut(100);
                     $('#board').find('#score').html(score);
                 });
